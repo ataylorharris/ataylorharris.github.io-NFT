@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | NFT preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    body {
+     background-color: hsl(217, 54%, 11%);
+     font-family: outfit;
+    }
+    .card {
+      height: 460px;
+      width: 258px;
+      background-color: hsl(216, 50%, 16%);
+      margin-left:auto;
+      margin-right:auto;
+      margin-top: 70px;
+      border-radius:20px;
+
+   
+    }
+  
+
+    .cube {
+      height: 240px;
+      width: 220px;
+      border-radius: 10px;
+      margin-left: 18px;
+      margin-top: 20px;
+      backface-visibility: hidden;
+      transition: .5s ease;
+     
+
+    }
+  
+   
+   
+    #words {
+      margin-top: 5.px;
+     color:white;
+      padding: 16px;
+      padding-left: -17px;
+    }
+    #time {
+      font-size: 10px;
+      font-weight:bold;
+      margin-left: 5px;
+    }
+    #ETH {
+      text-align: left;
+      margin-right: 100px;
+    
+    
+    }
+    #clock {
+      vertical-align:middle;
+    }
+    #cimage {
+      height: 10px;
+
+      margin-bottom: -1px;
+       padding-left:8px; 
+
+     
+     
+    }
+   .creator  {
+     color:white;
+     font-size: 1px;
+     margin-left: 39px;
+     margin-top: -15px;
+     
+    
+    
+   }
+   #avatar { 
+   margin-bottom: -18px;
+    border:solid; 
+    border-color:white;
+    margin-left: -4px;
+    
+   }
+   .container {
+    position: relative;
+  width: 50%;
+    
+  
+   }
+
+   
+   .overlay {
+  position: absolute;
+  margin-left: 20px;
+  margin-top: -245px;
+  height: 240px;
+      width: 220px;
+      border-radius: 10px;
+  opacity: 0;
+  
+  transition: .5s ease;
+  background-color: hsla(178, 100%, 50%, 0.52);
+  
+ 
+}
+.overlay:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+.eye {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  height: 40px;
+  opacity: 100;
+}
+
+.highlight {
+  
+}
+
+.highlight:hover {
+  color:hsl(178, 100%, 50%);
+  cursor: pointer;
+
+}
+.hightlight2:hover {
+  color:hsl(178, 100%, 50%);
+  cursor: pointer;
+}
+ 
+  </style>
+</head>
+
+<body>
+
+<div class="card">
+  <div class=""></div>
+  <div class="container">
+  
+  <img  class = "cube" src="image-equilibrium.jpg" ></div>
+  <div class="overlay">
+    <img  class="eye" src="icon-view.svg">
+  </div>
+ <div id="words"><span class="highlight"><b>Equilibrium #3429</b></span> <br><br>
+<span style="opacity:50%; font-size:14px">Our Equilibrium collection promotes balance and calm.</span> </div>
+
+<div id="time"><span  id= "ETH" style="color:hsl(178, 100%, 50%)"><img id="cimage" src=icon-ethereum.svg> 0.041ETH</span>
+  <span  id="clock" style="color:hsl(215, 51%, 70%)"><img id="cimage" src=icon-clock.svg> 3 days left</span><br><br></div>
+<hr style="opacity:20%;width:234px;margin-bottom:20px;">
+<div class="creator"style="font-size:11px"><div style="margin-left: -25px; margin-top:10px;"><img  id = "avatar" style="height:19px; 
+ border-radius: 200px; border-width: 1px; "src="image-avatar.png" ></div> <span ><span style="opacity:50%;">Creation of </span><span class="hightlight2"><b>Jules Wyvern</b></span></div> </span> 
+</div>
+
+  <div class="attribution">
+  
+  </div>
+
+
+ 
+
+</body>
+</html>
